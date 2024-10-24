@@ -8,15 +8,15 @@
 
 $number = 5;
 
-echo 'Ivestas skaičius: ' . $number . PHP_EOL;
+echo 'Ivestas skaičius: ' . $number . '<br>';
 $i = 0; // Pradedam nuo 1
 while ($number !== 1) {
     if ($number % 2 == 0)
         $number /= 2;
     else
         $number = 3 * $number + 1;
-    echo ($i + 1) . ') ' . $number . PHP_EOL;
+    echo ($i + 1) . ') ' . $number . '<br>';
     $i++;
 }
 // Išminusuojam, nes pradėta buvo nuo 1
-echo 'Iteracijų skaičius: ' . $i . PHP_EOL;
+echo 'Iteracijų skaičius: ' . $i . '<br>';

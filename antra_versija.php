@@ -20,7 +20,7 @@ $max_numbers = [];
 $maxIterations = 0;
 $minIterations = PHP_INT_MAX;
 
-echo "Intervalas: $from -> $to".PHP_EOL;
+echo "Intervalas: $from -> $to<br>";
 
 for ($i = $from; $i <= $to; $i++) {
     $number = $i;
@@ -39,11 +39,11 @@ for ($i = $from; $i <= $to; $i++) {
     $minIterations = min($minIterations, $current_iterations);
 }
 
-echo 'Didžiausi skaičiai: '.PHP_EOL;
+echo 'Didžiausi skaičiai: <br>';
 $i = 1;
 foreach ($max_numbers as $iteration => $number) {
-    echo " * $i ciklas: $number ($iteration iteracijų)".PHP_EOL;
+    echo " * $i ciklas: $number ($iteration iteracijų)<br>";
     $i++;
 }
-echo 'Daugiausia iteracijų: '.$maxIterations.PHP_EOL;
-echo 'Mažiausia iteracijų: '.$minIterations.PHP_EOL;
+echo 'Daugiausia iteracijų: '.$maxIterations.'<br>';
+echo 'Mažiausia iteracijų: '.$minIterations.'<br>';
